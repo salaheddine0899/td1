@@ -36,6 +36,8 @@ class Complex
 
 		Complex operator / (Complex& z);
 
+		friend Complex operator+(double x,const Complex&z);
+
 	
 };
 

@@ -1,2 +1,5 @@
-﻿  test1.cpp
-  test1.vcxproj -> C:\Users\a\Documents\test1\test1\Debug\test1.exe
+﻿  Complex.cpp
+  test1.cpp
+  Generating Code...
+C:\Users\a\Documents\test1\ex1\test1\Complex.cpp(56): warning C4715: 'Complex::operator/': not all control paths return a value
+  test1.vcxproj -> C:\Users\a\Documents\test1\ex1\Debug\test1.exe

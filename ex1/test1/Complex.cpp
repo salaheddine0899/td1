@@ -54,3 +54,13 @@ Complex Complex::operator/(Complex& z)
 		return res;
 	}
 }
+
+Complex operator+(double x, const Complex& z)
+{
+	return Complex(z.re+x,z.img);
+}
+
+//Complex operator+(double x, const Complex& z)
+//{
+//	return x+z;
+//}

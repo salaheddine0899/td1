@@ -15,7 +15,8 @@ int main()
     z.afficher();
     z.conjugue().afficher();
     z2->afficher();
-    Complex z3 = z / *z2;
+    Complex z3;
+    z3 = 3 + z;
     z3.afficher();
     cout << z2->module() << endl;
 

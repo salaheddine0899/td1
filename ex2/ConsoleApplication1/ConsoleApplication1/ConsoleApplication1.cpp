@@ -1,11 +1,30 @@
 // ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include "Circle.h"
 #include <iostream>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Circle c({ 0,0 }, 3);
+    c.afficher();
+    c.changer_rayon(4);
+    c.afficher();
+    /*c.translate_center({ 0,1 });
+    c.afficher();*/
+    cout << "area is:" << c.surface() << endl;
+    cout << "perimeter is:" << c.perimetre() << endl;
+    Circle* c1 = new Circle({ 0, 0 }, 4);
+    c1->afficher();
+    if (c == *c1)   cout << "yes" << endl;
+    else    cout << "no" << endl;
+    
+    if (c.appartenir({0,6})) cout << "yes" << endl;
+    else    cout << "no" << endl;
+
+    return 0;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

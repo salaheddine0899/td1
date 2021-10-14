@@ -7,12 +7,23 @@ typedef struct {
 class Circle
 {
 private:
+	Point centre;
 	float rayon;
-	Point p;
 public:
+	Circle(Point centre, float rayon);
 	void afficher();
 	//changement du rayon
-	void changer_rayon(float nv_rayon);
+	void changer_rayon(float);
+	//translation du centre
+	void translate_center(Point);
+	//surface
+	float surface();
+	//perimetre
+	float perimetre();
+	//égalité
+	bool operator == (Circle& c);
+
+	bool appartenir(Point p);
 
 	
 };

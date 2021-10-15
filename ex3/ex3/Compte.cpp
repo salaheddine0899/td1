@@ -1,5 +1,6 @@
 #include "Compte.h"
 
+int Compte::nbComptes = 0;
 
 void Compte::deposer(float mt)
 {
@@ -16,9 +17,9 @@ bool Compte::retirer(float mt)
 	return true;
 }
 
-Compte::Compte(int numCompte, string nomProp, float solde)
+Compte::Compte(string nomProp, float solde)
 {
-	this->numCompte = numCompte;
+	this->numCompte = ++this->nbComptes;
 	this->nomProprietaire = nomProp;
 	this->solde = solde;
 }

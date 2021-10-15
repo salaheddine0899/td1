@@ -1,0 +1,4 @@
+﻿  ex4.cpp
+ex4.obj : error LNK2019: unresolved external symbol "public: void __thiscall Pile<int>::empiler(int)" (?empiler@?$Pile@H@@QAEXH@Z) referenced in function _main
+ex4.obj : error LNK2019: unresolved external symbol "public: void __thiscall Pile<int>::afficher(void)" (?afficher@?$Pile@H@@QAEXXZ) referenced in function _main
+C:\Users\a\Documents\test1\ex4\Debug\ex4.exe : fatal error LNK1120: 2 unresolved externals

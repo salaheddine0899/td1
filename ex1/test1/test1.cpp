@@ -15,6 +15,7 @@ int main()
     z.afficher();
     z.conjugue().afficher();
     z2->afficher();
+    cout << sizeof(z2)<<endl;
     Complex z3;
     z3 = 3 + z;
     z3.afficher();

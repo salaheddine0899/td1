@@ -19,7 +19,7 @@ Complex::Complex()
 {
 }
 
-void Complex::afficher()
+void Complex::afficher() const
 {
 	if(this->img>=0)
 		cout << "le complex est:" << this->re << "+" << this->img << "i" << endl;
@@ -29,15 +29,25 @@ void Complex::afficher()
 	}
 }
 
-Complex Complex::conjugue()
+Complex Complex::conjugue() const
 {
 	return Complex(this->re, (-1) * this->img);
 }
 
-double Complex::module()
+double Complex::module() const
 {
 	double mod = pow(this->re, 2) + pow(this->img, 2);
 	return sqrt(mod);
+}
+
+Complex Complex::operator=(const Complex& z)
+{
+	//si les objets sont différents
+	if (this!= &z) {
+		this->re = z.re;
+		this->img = z.img;
+	}
+	return *this;
 }
 
 Complex Complex::operator/(Complex& z)

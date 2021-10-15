@@ -5,8 +5,8 @@
 
 int main()
 {
-	Compte c1(1,"Salah Eddine", 100000);
-	Compte c2(2,"Simo", 2000);
+	Compte c1("Salah Eddine", 100000);
+	Compte c2("Simo", 2000);
 
 	c1.consulter();
 	c2.consulter();

@@ -5,6 +5,7 @@ using namespace std;
 class Compte
 {
 private:
+	static int nbComptes;
 	int numCompte;
 	string  nomProprietaire;
 	float solde;
@@ -12,7 +13,7 @@ private:
 	bool retirer(float);
 
 public:
-	Compte(int, string, float);
+	Compte(string, float);
 	void consulter();
 	void transferer(Compte &c,float mt);
 };

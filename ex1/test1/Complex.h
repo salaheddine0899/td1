@@ -12,9 +12,10 @@ class Complex
 		Complex(double re, double im);
 		Complex(double re);
 		Complex();
-		void afficher();
-		Complex conjugue();
-		double module();
+		void afficher() const;
+		Complex conjugue() const;
+		double module() const;
+		Complex operator=(const Complex& z);
 		Complex operator + (Complex &z1) {
 			Complex res;
 			res.re = this->re + z1.re;

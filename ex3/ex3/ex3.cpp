@@ -1,5 +1,5 @@
-// ex3.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//ILISI2
+//ABID Salah Eddine
 
 #include "Compte.h"
 

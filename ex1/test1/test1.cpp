@@ -7,22 +7,22 @@
 using namespace std;
 
 //using namespace dd;
-
 int main()
 {
-    Complex z(3,2);//instantiation=declaration+initialisation
-    Complex  *z2=new Complex(0,1);
+    Complex &z=Complex::init(3,2);//instantiation=declaration+initialisation
+    z.afficher();
+    /*Complex  *z2=new z2->init(0,1);
     z.afficher();
     z.conjugue().afficher();
     z2->afficher();
     cout << sizeof(z2)<<endl;
     Complex z3;
-    z3 = 3 + z;
+    z3=z+3;
     z3.afficher();
     cout << z2->module() << endl;
 
 
-    delete z2;
+    delete z2;*/
  
     system("pause");
     return 0;
